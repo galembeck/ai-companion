@@ -6,6 +6,7 @@ import { cn } from '@/lib/utils';
 import { Menu, Sparkles } from 'lucide-react'
 import { UserButton } from '@clerk/nextjs';
 import { Button } from '@/components/ui/button';
+import { ThemeToggle } from './theme-toggle';
 
 const font = Poppins({
   weight: "600",
@@ -32,6 +33,7 @@ export function Navbar() {
           Upgrade
           <Sparkles className="h-4 w-4 fill-white text-white ml-2" />
         </Button>
+        <ThemeToggle />
         <UserButton />
       </div>
     </div>   
